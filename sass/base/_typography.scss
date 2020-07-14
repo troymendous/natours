@@ -37,17 +37,14 @@ body {
 	text-transform: uppercase;
 	font-weight: 700;
 	display: inline-block;
-	background-image: limear-gradient(to right, $color-primary-light, $color-primary-dark);
+	background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
 	-webkit-background-clip: text;
-	color: $color-primary-light;
 	letter-spacing: 2px;
 	transition: all .2s;
-	outline-offset: 2rem;
 
 	&:hover {
 		transform: skewY(2deg) skewX(15deg);
 		text-shadow: .5rem 1rem 2rem rgba($color-black, 2);
-		outline: 1.5rem solid $color-primary;
 	}
 }
 
