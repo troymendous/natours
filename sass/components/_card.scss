@@ -24,7 +24,6 @@
 		}
 
 		&--back {
-			background-color: green;
 			transform: rotateY(180deg);
 
 			&-1 {
@@ -39,7 +38,7 @@
 		}
 	}
 
-	&primary_side--front {
+	&:hover &side--front {
 		transform: rotateY(-180deg);
 	}
 
@@ -56,6 +55,7 @@
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
 
 		&--1 {
 			background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
@@ -70,6 +70,7 @@
 				url(../img/nat-7.jpg);
 		}
 	}
+
 	&__heading {
 		font-size: 2.8rem;
 		font-weight: 300;
