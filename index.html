@@ -14,6 +14,22 @@
         
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span></label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link"><span class="">1</span>About Natours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span class="">2</span>Your Benefits</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span class="">3</span>Popular Tours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span class="">4</span>Stories</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span class="">5</span>Book now</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <body>
         <header class="header">
@@ -31,9 +47,7 @@
 
                 <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
-
-            
-        </header>
+ </header>
         <main>
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
@@ -111,7 +125,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -122,7 +136,7 @@
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
-                                <div class="card_picture card_picture--1">
+                                <div class="card__picture card__picture--1">
                                     &nbsp;
                                 </div>
                                 <h4 class="card__heading">
@@ -132,11 +146,11 @@
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <ls>3 day tour</ls>
-                                        <ls>Up to 30 people</ls>
-                                        <ls>2 tour guids</ls>
-                                        <ls>Sleep in cozy hotels</ls>
-                                        <ls>Difficulty: easy</ls>
+                                        <li>3 day tour</li>
+                                        <li>Up to 30 people</li>
+                                        <li>2 tour guidse</li>
+                                        <li>Sleep in cozy hotels</li>
+                                        <li>Difficulty: easy</li>
                                     </ul>
                                 </div>
                             </div>
@@ -156,7 +170,7 @@
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
-                                <div class="card_picture card_picture--2">
+                                <div class="card__picture card__picture--2">
                                     
                                     &nbsp;
 
@@ -168,11 +182,11 @@
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <ls>70 day tour</ls>
-                                        <ls>Up to 40 people</ls>
-                                        <ls>0 tour guides</ls>
-                                        <ls>Sleep in the woods</ls>
-                                        <ls>Difficulty: Medium</ls>
+                                        <li>70 day tour</li>
+                                        <li>Up to 40 people</li>
+                                        <li>0 tour guides</li>
+                                        <li>Sleep in the woods</li>
+                                        <li>Difficulty: Medium</li>
                                     </ul>
                                 </div>
                             </div>
@@ -193,23 +207,23 @@
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
-                                <div class="card_picture card_picture--3">
+                                <div class="card__picture card__picture--3">
                                     
                                     &nbsp;
 
                                 </div>
                                 <h4 class="card__heading">
-                                    <span class="card-heading-span card__heading-span--3">
+                                    <span class="card__heading-span card__heading-span--3">
                                     The cult plan
                                 </span>
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <ls>3,000 day tour</ls>
-                                        <ls>Up to 3 million people</ls>
-                                        <ls>87 tour guids</ls>
-                                        <ls>Sleep in cozy hotels</ls>
-                                        <ls>Difficulty: Impossible, you will literally die</ls>
+                                        <li>3,000 day tour</li>
+                                        <li>Up to 3 million people</li>
+                                        <li>87 tour guids</li>
+                                        <li>Sleep in cozy hotels</li>
+                                        <li>Difficulty: Impossible, you will literally die</li>
                                     </ul>
                                 </div>
                             </div>
@@ -295,13 +309,13 @@
                                     </h2>
                                 </div>
                                 <div class="form__group">
-                                    <input type="text" class="form__imput" placeholder="Full Name" id="name" required>
-                                    <label for="name" class="form-label">Full name</label>
+                                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <label for="name" class="form__label">Full name</label>
                                 </div>
 
                                 <div class="form__group">
-                                    <input type="email" class="form__imput" placeholder="Email address" id="email" required>
-                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                    <label for="email" class="form__label">Email</label>
                                 </div>
                                 <div class="form__group u-margin-bottom-medium">
                                     <div class="form__radio-group">
@@ -312,7 +326,7 @@
                                     </div>
 
                                     <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="small" name="size">
+                                        <input type="radio" class="form__radio-input" id="large" name="size">
                                         <label for="large"  class="form__radio-label">
                                             <span class="form__radio-button"></span>
                                             
@@ -336,8 +350,12 @@
         </main>
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
-            </div>
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                            media="(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                </picture>           
+             </div>
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
