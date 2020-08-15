@@ -42,7 +42,7 @@
 	}
 
 	&:hover &__side--back {
-		transform: rotateY(0deg);
+		transform: rotateY(0);
 	}
 
 	// .card:hover .card__side { }
@@ -61,11 +61,11 @@
 				url(../img/nat-5.jpg);
 		}
 		&--2 {
-			background-image: linear-gradient(to right bottom, $color-primary-light, $color-secondary-dark),
+			background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
 				url(../img/nat-6.jpg);
 		}
 		&--3 {
-			background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-secondary-dark),
+			background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
 				url(../img/nat-7.jpg);
 		}
 	}
@@ -73,7 +73,7 @@
 	&__heading {
 		font-size: 2.8rem;
 		font-weight: 300;
-		text-transform: $color-white;
+		text-transform: uppercase;
 		text-align: right;
 		color: $color-white;
 		position: absolute;
@@ -157,7 +157,9 @@
 		font-weight: 100;
 	}
 
-	@include respond(tab-port) {
+	// @include respond(tab-port)
+
+	@media only screen and (max-width: 56.25em), only screen and (hover: none) {
 		height: auto;
 		border-radius: 3px;
 		background-color: $color-white;

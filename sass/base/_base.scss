@@ -1,5 +1,5 @@
 *,
-*a::after,
+*::after,
 *::before {
 	margin: 0;
 	padding: 0;
@@ -30,7 +30,11 @@ body {
 	padding: 3rem;
 
 	@include respond(tab-port) {
-		font-size: 50%;
 		padding: 0;
 	}
+}
+
+::selection {
+	background-color: $color-primary;
+	color: $color-white;
 }
